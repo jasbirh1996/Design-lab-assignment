@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.views.AllMatchesFragment">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <TextView
+          android:layout_marginTop="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:text="@string/all_matches"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_marginTop="20dp"
+          android:id="@+id/rv_all_matches"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>
+
+</layout>
